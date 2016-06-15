@@ -9,15 +9,11 @@ import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
 
-    TextView textView;
-
-    private static final List<Integer> LOOP = Arrays.asList(1, 2, 3, 4, 5);
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        textView = (TextView) findViewById(R.id.text);
+        TextView textView = (TextView) findViewById(R.id.text);
         final String textToDisplay = getTextToDisplay(1);
 
         textView.setText(textToDisplay); // Put a breakpoint here (Breakpoint A)
